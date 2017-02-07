@@ -5,7 +5,8 @@
 function Mostar()
 {
 	var nombre;
-	nombre = prompt("Ingrese el nombre.");
-	document.getElementById('elNombre').value = nombre; //Cuando le pongo la variable al principio le doy valor a la variable, si le pongo al final, le doy el valor de la variable al ID
+	nombre = prompt("Escribí tu nombre","");
+	document.getElementById('elNombre').value = nombre;
+	
 }
 
