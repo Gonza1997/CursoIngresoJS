@@ -5,5 +5,6 @@ en el cuadro de texto "RESULTADO".*/
 function MostrarAumento()
 {
 
-	
+	var importe
+	importe = document.getElementById('')
 }
