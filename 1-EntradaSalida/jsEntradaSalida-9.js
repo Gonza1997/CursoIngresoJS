@@ -6,5 +6,7 @@ function MostrarAumento()
 {
 
 	var importe
-	importe = document.getElementById('')
+	importe = document.getElementById('sueldo');
+	importe = parseInt(importe);
+
 }
