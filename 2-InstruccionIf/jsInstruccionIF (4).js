@@ -1,7 +1,26 @@
 function Mostrar()
 {
-//tomo la edad  
+	var edad;
+	edad = document.getElementById('edad').value;
+	edad = parseInt(edad);
 
+	if(edad<18)
+	{
 
+		if(edad>12)
 
-}//FIN DE LA FUNCIÓN
+		{
+			alert("Usted es adolescente.");
+		}
+	}
+
+}
+
+/*Otra forma de hacerlo:
+{
+	if(edad<18 && edad>12) "&&" es el "Y" lógico, es como decir "Si la edad es menor a 18 Y mayor a 12"
+		{
+		alert("Adolescente.");
+		}
+}
+*/
