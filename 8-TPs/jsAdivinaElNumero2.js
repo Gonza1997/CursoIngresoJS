@@ -12,6 +12,7 @@ Más de 10 intentos: “afortunado en el amor!!”.*/
 var numerosecreto; 
 var contadorIntentos;
 var numero;
+contadorIntentos=0
 
 function comenzar()
 {
@@ -24,6 +25,7 @@ function comenzar()
 function verificar()
 {
 	contadorIntentos = contadorIntentos + 1;
+	contadorIntentos = parseInt(contadorIntentos);
 	document.getElementById('intentos').value = contadorIntentos;
 	if(numero < numerosecreto)
 	{
@@ -32,5 +34,27 @@ function verificar()
 	else
 	{
 		if(numero > numerosecreto)
+		{
+			alert("Te pasaste.");
+		}
+		else
+		{
+			alert("¡Usted ganó en tan solo "+contadorIntentos+" intentos!");
+
+			switch(contadorIntentos)
+			{
+				case 1:
+					alert("¡Usted es psíquico!");
+					break;
+				case 2:
+					alert("¡Excelente percepción!");
+					break;
+				case 3:
+					alert("Esto es suerte.");
+					break;
+				case 4:
+					alert()
+			}
+		}
 	}
 }
