@@ -12,7 +12,7 @@ var contadorIntentos;
 
 function comenzar()
 {
-	numeroSecreto = Math.floor((Math.random() * 10) + 1);
+	numeroSecreto = Math.floor((Math.random() * 100) + 1);
 	contadorIntentos = 1
 }
 
