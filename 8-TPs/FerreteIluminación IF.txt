@@ -1,0 +1,110 @@
+/* FORMA DE HACERLO CON IF:
+
+ 	var precio;
+ 	var marca;
+ 	var lamparas;
+ 	var precio2;
+ 	var ingresos;
+ 	marca = document.getElementById('Marca').value;
+ 	precio = 35
+ 	lamparas = document.getElementById('Cantidad').value;
+ 	lamparas = parseInt(lamparas);
+
+ 	if(lamparas > 5)
+ 	{
+ 		precio2 = (precio * lamparas) * 0.50;
+ 		document.getElementById('precioDescuento').value = precio2;	
+ 	}
+
+ 	if(marca == "ArgentinaLuz" ) //Marca "ArgentinaLuz"
+ 	{
+ 		if(lamparas == 5)
+ 		{
+ 			precio2 = (precio * lamparas) * 0.60;
+ 			document.getElementById('precioDescuento').value = precio2;	
+ 		}
+ 		else
+ 		{
+ 			if(lamparas == 4)
+ 			{
+ 				precio2 = (precio * lamparas) * 0.75;
+ 				document.getElementById('precioDescuento').value = precio2;	
+ 			}
+
+ 			else
+ 			{
+ 				if(lamparas == 3)
+ 				{
+ 					precio2 = (precio * lamparas) * 0.85;
+ 					document.getElementById('precioDescuento').value = precio2;	
+ 				}
+
+ 				else
+ 				{
+ 					precio2 = (precio * lamparas);
+ 					document.getElementById('precioDescuento').value = precio2;	
+ 				}
+ 			}
+ 		}
+ 	}
+ 	else
+ 	{	
+ 		if(lamparas == 5)
+ 		{
+ 			precio2 = (precio * lamparas) * 0.70;
+ 			document.getElementById('precioDescuento').value = precio2;	
+ 		}
+
+ 		else
+ 		{
+ 			if(lamparas == 4)
+ 			{
+ 				if( marca == "FelipeLamparas")
+ 				{
+ 					precio2 = (precio * lamparas) * 0.75;
+ 					document.getElementById('precioDescuento').value = precio2;	
+ 				}
+
+ 				else
+ 				{
+ 					precio2 = (precio * lamparas) * 0.80;
+ 					document.getElementById('precioDescuento').value = precio2;	
+ 				}
+ 			}
+
+ 			else
+ 			{
+ 				if(lamparas == 3)
+ 				{
+ 					if(marca == "FelipeLamparas")
+ 					{
+ 						precio2 = (precio * lamparas) * 0.90;
+						document.getElementById('precioDescuento').value = precio2;
+ 					}
+
+ 					else
+ 					{
+ 						precio2 = (precio * lamparas) * 0.95;
+						document.getElementById('precioDescuento').value = precio2;
+ 					}
+ 				}
+
+ 				else
+ 				{
+ 					precio2 = (precio * lamparas);
+					document.getElementById('precioDescuento').value = precio2;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	if(precio2 > 119)
+ 	{
+ 		var precioI
+ 		ingresos = precio2 * 0.10;
+ 		precioI = precio2 + ingresos;
+ 		alert("Usted pagó "+ingresos+" de IIBB, siendo "+precioI+" el impuesto que se pagó.");
+ 	}
+}
+*/
+ 
