@@ -6,7 +6,7 @@ function Mostrar()
 	
 	var respuesta="si";
 
-	while(respuesta!="no")
+	while(respuesta != "no")
 	{
 		
 	

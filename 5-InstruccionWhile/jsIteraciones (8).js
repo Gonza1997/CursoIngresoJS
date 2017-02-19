@@ -8,26 +8,23 @@ function Mostrar()
 	
 	var respuesta="si";
 	
-	while(respuesta != "no")
+	while(respuesta == "si")
 	{
 		numero = prompt("Ingrese un número1.");
 		numero = parseInt(numero);
 
-		while(numero > 0 && respuesta != "no")
+		if(numero > 0)
 		{
 			positivo = (numero + positivo);
-			respuesta = prompt("¿Desea seguir introduciendo números?");
-			numero = prompt("Ingrese un númeroP.");
+			respuesta = prompt("¿Desea seguir?");
 		}
 
-		while(numero < 0)
+		else
 		{
-			negativo = (negativo * numero);
-		}
-
-		
+			negativo = (numero * negativo);
+			respuesta = prompt("¿Desea seguir?");
+		}	
 	}
-
 
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;
