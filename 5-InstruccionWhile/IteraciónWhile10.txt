@@ -1,0 +1,58 @@
+	var contador = 0;
+	var acumuladornegativo = 0;	
+	var acumuladorpositivo = 0;
+	var respuesta="si";
+	var numero;
+	var contadornegativo = 0;
+	var contadorpositivo = 0;
+	var contadorpar = 0;
+	var contadorceros = 0;
+
+	while(respuesta == "si")
+	{
+		numero = prompt("Ingrese un número");
+
+		if(numero < 0)
+		{
+			acumuladornegativo = (acumuladornegativo - numero);
+			acumuladornegativo = parseInt(acumuladornegativo);
+			contadornegativo++
+		}
+		else
+		{
+			if(numero > 0)
+			{
+			acumuladorpositivo = (acumuladorpositivo + numero);
+			acumuladorpositivo = parseInt(acumuladorpositivo);
+			contadorpositivo++;
+			}
+		}
+
+		if(numero == 0)
+		{
+			contadorceros++;
+			contadorpar++;
+		}
+
+		else
+		{
+			if(numero % 2 == 0)
+			{
+				contadorpar++;
+			}
+		}
+
+		respuesta = prompt("¿Desea seguir introduciendo números?");
+	
+	}
+	var promediopositivos = acumuladorpositivo / contadorpositivo;
+	var promedionegativos = acumuladornegativo / contadornegativo;
+	
+	document.write("</br>La suma de los positivos: "+acumuladorpositivo);
+	document.write("</br>La suma de los negativos: "+acumuladornegativo);
+	document.write("</br>La cantidad de positivos: "+contadorpositivo);
+	document.write("</br>La cantidad de negativos: "+contadornegativo);
+	document.write("</br>La cantidad de Pares: "+contadorpar);
+	document.write("</br>La cantidad de ceros: "+contadorceros);
+	document.write("</br>El promedio de positivos: "+promediopositivos);
+	document.write("</br>El promedio de negativos: "+promedionegativos);

@@ -6,25 +6,35 @@ function Mostrar()
 	
 	var respuesta='si';
 	var numero;
-	var maximo = 0;
-	var minimo = 0;
+	var maximo;
+	var minimo;
 
-	while(respuesta!='no')
+	while(respuesta == "si")
 	{
 		numero = prompt("Ingrese un número.");
 		numero = parseInt(numero);
-		respuesta = prompt("¿Desea seguir?");	
-		contador++;
-
-		if(numero > maximo)
+				
+		if(contador == 0)
 		{
 			maximo = numero;
+			minimo = numero;
 		}
 
 		else
 		{
-			minimo = numero;
+			if(numero > maximo)
+			{
+				maximo = numero;
+			}
+
+			if(numero < minimo)
+			{
+				minimo = numero;
+			}
 		}
+
+		respuesta = prompt("¿Desea seguir?");	
+		contador++;
 
 	}
 
