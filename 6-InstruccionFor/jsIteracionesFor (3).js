@@ -1,8 +1,14 @@
 function Mostrar()
 {
+	var repeticiones;
 
-var repetciones = prompt("ingrese el número de repeticiones");
+	repeticiones = prompt("Ingrese un número: ");
+	repeticiones = parseInt(repeticiones);
 
+	for(var limite = 0 ; repeticiones > limite ; limite++)
+	{
+		alert("Hola UTN");
+	}
 
 
 }//FIN DE LA FUNCIÓN
