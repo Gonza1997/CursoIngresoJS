@@ -20,6 +20,7 @@ function Mostrar() /*Iteración hasta que el usuario quiera*/
 	var porcentajedesaprobados;
 	var contadoraprobados = 0;
 	var contadordesaprobados = 0;
+	var genero10;
 
 	while(respuesta == "si")
 	{
@@ -151,11 +152,11 @@ function Mostrar() /*Iteración hasta que el usuario quiera*/
 			var nombrenota10 = nombre;
 			if(sexo == "f")
 			{
-				var genero10 = "femenino";
+				genero10 = "femenino";
 			}
 			else
 			{
-				var genero10 = "masculino";
+				genero10 = "masculino";
 			}
 		}
 
