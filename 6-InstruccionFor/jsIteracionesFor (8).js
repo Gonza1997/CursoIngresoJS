@@ -1,5 +1,42 @@
 function Mostrar()
 {
+	var numero;
+	var numeroanterior;
+	var numerorecorrido;
+	var tienedivisor = "no";
+
+	numero = prompt("ingrese su número: ");
+	numero = parseInt(numero);
+
+	for(numerorecorrido = 2; numerorecorrido<=numero; numerorecorrido++)//Ejercicio de saber cuántos primos hay debajo de un número
+	{
+		for(numeroanterior = 2;numeroanterior <= (numerorecorrido/2); numeroanterior++)//Ejercicio de saber si un número es primo
+		{
+			tienedivisor = "no";
+			if(numerorecorrido % numeroanterior == 0)
+			{
+				tienedivisor = "si";
+				
+				break;
+			}
+
+		}
+
+		if(tienedivisor == "no")
+		{
+			console.log("Es primo "+numerorecorrido);
+		}
+
+	}
+
+
+}
+
+
+
+
+
+/*
 	var contador = 0;
 	var contador1 = 0;
 	var contador2 = 0;
@@ -50,20 +87,19 @@ function Mostrar()
 		}
 	}
 	
-	document.write("</br>El porcentaje de numeros 1 es: "+((contador1*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 2 es: "+((contador2*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 3 es: "+((contador3*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 4 es: "+((contador4*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 5 es: "+((contador5*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 6 es: "+((contador6*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 7 es: "+((contador7*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 8 es: "+((contador8*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 9 es: "+((contador9*100)/100000)+"%");
-	document.write("</br>El porcentaje de numeros 0 es: "+((contador0*100)/100000)+"%");
-
+	document.write("</br>El porcentaje de numeros 1 es: "+((contador1*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 2 es: "+((contador2*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 3 es: "+((contador3*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 4 es: "+((contador4*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 5 es: "+((contador5*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 6 es: "+((contador6*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 7 es: "+((contador7*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 8 es: "+((contador8*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 9 es: "+((contador9*100)/100000)+" %");
+	document.write("</br>El porcentaje de numeros 0 es: "+((contador0*100)/100000)+" %");
+*/
 	
 
-}//FIN DE LA FUNCIÓN
 
 /* Al generar números random del 0 al 10, 
 se debe contar la cantidad de cada una de estas cifras, 
